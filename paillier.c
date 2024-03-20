@@ -77,7 +77,7 @@ int generateRandomKeys(paillierKeys *keys, int *key_len, BN_CTX *ctx)
 
     if (final_key_l < 32)
     {
-        fprintf(stderr, "Key lenght too short. Minimum lenght 32 bits");
+        fprintf(stderr, "Key length too short. Minimum length 32 bits");
         goto end;
     }
 
