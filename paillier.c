@@ -329,7 +329,7 @@ end:
 int
 sub(BIGNUM *result, const BIGNUM *a, const BIGNUM *b, const BIGNUM *n2, BN_CTX *ctx)
 {
-    int ret = 0;
+    int ret = 1;
     BN_CTX_start(ctx);
 
     BIGNUM *b_inv = BN_CTX_get(ctx);
